@@ -1,0 +1,41 @@
+﻿@model IEnumerable<SistemaMatricula.mvc.Models.Aluno>
+
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Matrícula</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Curso</th>
+            <th scope="col">Unidade</th>
+            <th scope="col">Ultima Atualização</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <!-- Verificando se há registros no banco -->
+        @if(Model != null)
+        {
+            <!-- Percorrendo os registros do banco-->
+            @foreach(var matricula in Model)
+            {
+                <tr>
+                    <th scope="row">@matricula.MatriculaId</th>
+                    <td>@matricula.Nome</td>
+                    <td>@matricula.Curso</td>
+                    <td>@matricula.Unidade</td>
+                    <td>@matricula.DataMatricula</td>
+
+                </tr>
+            }
+
+
+        }
+
+
+
+
+
+    </tbody>
+</table>
