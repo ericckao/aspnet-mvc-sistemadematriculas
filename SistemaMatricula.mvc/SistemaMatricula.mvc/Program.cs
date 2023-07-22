@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SistemaMatricula.mvc.Database;
+using SistemaMatricula.mvc.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MatriculaContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
+//Injeção de dependência
+builder.Services.AddScoped<IMatriculaRepository, MatriculaRepository>();
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

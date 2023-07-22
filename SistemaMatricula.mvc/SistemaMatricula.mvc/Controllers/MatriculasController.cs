@@ -1,23 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaMatricula.mvc.Database;
 using SistemaMatricula.mvc.Models;
+using SistemaMatricula.mvc.Repositories;
 
 namespace SistemaMatricula.mvc.Controllers
 {
     public class MatriculasController : Controller
     {
-        private readonly MatriculaContext _db;
+        private readonly IMatriculaRepository _repository;
 
-        public MatriculasController(MatriculaContext db)
+        public MatriculasController(IMatriculaRepository repository)
         {
-            _db = db;
+            _repository = repository;
         }
 
         public IActionResult Index()
         {
-            //Salvando toda a tabela do banco de dados em uma Enumerable e passando esse para a view
-            IEnumerable<Aluno> aluno = _db.Matriculas;
-            return View(aluno);
+           var listaMatriculas =_repository.Get();
+            return View(listaMatriculas);
         }
+
     }
 }
