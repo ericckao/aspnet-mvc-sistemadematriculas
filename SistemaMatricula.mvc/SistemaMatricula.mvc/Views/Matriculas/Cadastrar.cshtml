@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Cadastrar Aluno";
+}
+
+
+<div class="container bg-dark p-5 rounded-5 w-50">
+
+    <div class="mb-5 text-center">
+        <h1 class="text-light">Cadastro de Alunos</h1>
+    </div>
+
+    <form>
+
+        <div class="mb-3">
+            <label for="Nome" class="form-label text-light fw-bold">Nome</label>
+            <input type="text" class="form-control" id="Nome" placeholder="Nome Completo">
+        </div>
+
+        <div class="mb-3">
+            <label for="Curso" class="form-label text-light fw-bold">Curso</label>
+            <input type="text" class="form-control" id="Curso" placeholder="Informe o Curso em que o aluno está vinculado.">
+        </div>
+
+        <div class="mb-3">
+            <label for="Unidade" class="form-label text-light fw-bold">Unidade</label>
+            <input type="text" class="form-control" id="Unidade" placeholder="Digite a Unidade em que o aluno está vinculado.">
+        </div>
+
+        <div class="d-flex gap-5 mt-5">
+            <button type="button" class="btn btn-success w-50">Registrar</button>
+            <a type="button" class="btn btn-primary w-50">Voltar</a>
+        </div>
+
+
+
+
+    </form>
+</div>

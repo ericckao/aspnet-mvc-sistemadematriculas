@@ -20,5 +20,10 @@ namespace SistemaMatricula.mvc.Controllers
             return View(listaMatriculas);
         }
 
+        public IActionResult Cadastrar()
+        {
+            return View();
+        }
+
     }
 }

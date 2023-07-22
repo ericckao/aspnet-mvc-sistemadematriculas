@@ -16,7 +16,7 @@ namespace SistemaMatricula.mvc.Repositories
         //GET
         public IEnumerable<Aluno> Get()
         {
-            var lista = _db.Matriculas.OrderBy(x => x.Nome);
+            var lista = _db.Matriculas;
             return lista;
         }
     }
