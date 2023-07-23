@@ -46,7 +46,7 @@ namespace SistemaMatricula.mvc.Controllers
         {
             var registro = _repository.BuscarPorId(id);
 
-            if(registro == null)
+            if(registro == null || registro.MatriculaId == 0)
             {
                 return NotFound();
             }
@@ -65,6 +65,34 @@ namespace SistemaMatricula.mvc.Controllers
             }
 
             return View(); //Caso a model estiver incorreta, ele continuará na pagina de cadastro.
+        }
+
+        //DELETE
+
+        //Recuperando o registro que está na tela.
+        [HttpGet]
+        public IActionResult Excluir(int id)
+        {
+            var registro = _repository.BuscarPorId(id);
+
+            if (registro == null || registro.MatriculaId == 0)
+            {
+                return NotFound();
+            }
+            //Capturando o registro e jogando pra tela de Editar com os dados do usuário.
+            return View(registro);
+        }
+
+        [HttpPost]
+        public IActionResult Excluir(Aluno registro)
+        {
+            if (registro == null)
+            {
+                return NotFound();
+            }
+
+            _repository.Deletar(registro);
+            return RedirectToAction("Index"); //Após o cadastro, redirecionando para a index
         }
 
     }

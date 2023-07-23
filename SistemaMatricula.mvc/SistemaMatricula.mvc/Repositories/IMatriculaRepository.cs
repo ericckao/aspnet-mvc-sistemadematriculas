@@ -12,6 +12,7 @@ namespace SistemaMatricula.mvc.Repositories
         public void Cadastrar(Aluno aluno);
         public Aluno BuscarPorId(int id);
         public void Atualizar(Aluno aluno); 
+        public void Deletar(Aluno aluno);
 
 
 

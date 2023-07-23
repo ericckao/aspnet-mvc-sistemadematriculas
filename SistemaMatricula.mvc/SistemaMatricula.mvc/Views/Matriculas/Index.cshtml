@@ -41,11 +41,11 @@
                     <td>@matricula.Nome</td>
                     <td>@matricula.Curso</td>
                     <td>@matricula.Unidade</td>
-                    <td>@matricula.DataMatricula</td>
+                    <td id>@matricula.DataMatricula</td>
                     <td>
                         <!-- asp-route-id permite guardar esse usuário para que possamos exibir os dados dele e envia para a pagina editar.-->
                         <a type="button" class="btn btn-warning" asp-controller="Matriculas" asp-action="Editar" asp-route-id="@matricula.MatriculaId">Editar</a>
-                        <a type="button" class="btn btn-danger" asp-controller="Matriculas" asp-action="Deletar" asp-route-id="@matricula.MatriculaId">Excluir</a>
+                        <a type="button" class="btn btn-danger" asp-controller="Matriculas" asp-action="Excluir" asp-route-id="@matricula.MatriculaId">Excluir</a>
                     </td>
 
                 </tr>

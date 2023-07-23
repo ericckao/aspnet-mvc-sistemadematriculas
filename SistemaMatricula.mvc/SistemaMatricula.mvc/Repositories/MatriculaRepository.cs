@@ -42,5 +42,14 @@ namespace SistemaMatricula.mvc.Repositories
             _db.Add(aluno);
             _db.SaveChanges();
         }
+
+        //Delete
+        public void Deletar(Aluno aluno)
+        {
+            _db.Remove(aluno);
+            _db.SaveChanges();
+
+
+        }
     }
 }
