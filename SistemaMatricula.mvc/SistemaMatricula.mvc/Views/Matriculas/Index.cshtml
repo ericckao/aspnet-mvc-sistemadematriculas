@@ -11,12 +11,12 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1>Matrículas</h1>
         <!-- Navegação para o page formulario de cadastro Controller Matriculas>> Método Cadastrar-->
-        <a class="btn btn-success mx-2" asp-controller="Matriculas" asp-action="Cadastrar">Nova Matrícula</a>
+        <a class="btn btn-success mx-2" asp-controller="Matriculas" asp-action="Cadastrar"><i class="bi bi-file-earmark-plus mx-2"></i>Nova Matrícula</a>
     </div>
 
     <!-- A view está recebendo da controller o banco de dados salvo na var "aluno-->
 
-<table class="table table-dark table-hover">
+<table class="table table-light table-hover">
     <thead>
         <tr>
             <th scope="col">Matrícula</th>
@@ -44,8 +44,8 @@
                     <td id>@matricula.DataMatricula</td>
                     <td>
                         <!-- asp-route-id permite guardar esse usuário para que possamos exibir os dados dele e envia para a pagina editar.-->
-                        <a type="button" class="btn btn-warning" asp-controller="Matriculas" asp-action="Editar" asp-route-id="@matricula.MatriculaId">Editar</a>
-                        <a type="button" class="btn btn-danger" asp-controller="Matriculas" asp-action="Excluir" asp-route-id="@matricula.MatriculaId">Excluir</a>
+                            <a type="button" class="btn btn-warning mx-2"  asp-controller="Matriculas" asp-action="Editar" asp-route-id="@matricula.MatriculaId"><i class="bi bi-pencil-square mx-1"></i>Editar</a>
+                            <a type="button" class="btn btn-danger mx-2" asp-controller="Matriculas" asp-action="Excluir" asp-route-id="@matricula.MatriculaId"><i class="bi bi-trash3-fill mx-1"></i>Excluir</a>
                     </td>
 
                 </tr>
