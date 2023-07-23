@@ -20,10 +20,27 @@ namespace SistemaMatricula.mvc.Controllers
             return View(listaMatriculas);
         }
 
+        //GET
+        [HttpGet]
         public IActionResult Cadastrar()
         {
             return View();
         }
+
+        //CREATE
+        [HttpPost]
+        public IActionResult Cadastrar(Aluno matricula)
+        {
+            if (ModelState.IsValid) //Verifica se a model recebida é valida
+            {
+                _repository.Cadastrar(matricula);
+                return RedirectToAction("Index"); //Após o cadastro, redirecionando para a index
+            }
+
+            return View(); //Caso a model estiver incorreta, ele continuará na pagina de cadastro.
+        }
+
+
 
     }
 }

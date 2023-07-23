@@ -8,7 +8,8 @@ namespace SistemaMatricula.mvc.Repositories
          * CRUD - Creeate, Retrieve, Update e Delete
          */
 
-        IEnumerable<Aluno> Get();
+        public IEnumerable<Aluno> Get();
+        public void Cadastrar(Aluno aluno);
 
 
     }

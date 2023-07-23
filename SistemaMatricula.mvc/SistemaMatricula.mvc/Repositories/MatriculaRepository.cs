@@ -18,6 +18,16 @@ namespace SistemaMatricula.mvc.Repositories
         {
             var lista = _db.Matriculas;
             return lista;
+            
+        }
+
+        public void Cadastrar(Aluno aluno)
+        {
+            
+            
+            
+            _db.Add(aluno);
+            _db.SaveChanges();
         }
     }
 }
