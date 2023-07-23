@@ -24,7 +24,8 @@
             <th scope="col">Curso</th>
             <th scope="col">Unidade</th>
             <th scope="col">Ultima Atualização</th>
-
+            <th></th>
+ 
         </tr>
     </thead>
     <tbody>
@@ -41,6 +42,11 @@
                     <td>@matricula.Curso</td>
                     <td>@matricula.Unidade</td>
                     <td>@matricula.DataMatricula</td>
+                    <td>
+                        <!-- asp-route-id permite guardar esse usuário para que possamos exibir os dados dele e envia para a pagina editar.-->
+                        <a type="button" class="btn btn-warning" asp-controller="Matriculas" asp-action="Editar" asp-route-id="@matricula.MatriculaId">Editar</a>
+                        <a type="button" class="btn btn-danger" asp-controller="Matriculas" asp-action="Deletar" asp-route-id="@matricula.MatriculaId">Excluir</a>
+                    </td>
 
                 </tr>
             }

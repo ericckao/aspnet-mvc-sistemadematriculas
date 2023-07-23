@@ -10,6 +10,9 @@ namespace SistemaMatricula.mvc.Repositories
 
         public IEnumerable<Aluno> Get();
         public void Cadastrar(Aluno aluno);
+        public Aluno BuscarPorId(int id);
+        public void Atualizar(Aluno aluno); 
+
 
 
     }

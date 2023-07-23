@@ -1,4 +1,5 @@
-﻿using SistemaMatricula.mvc.Database;
+﻿using Microsoft.AspNetCore.Mvc;
+using SistemaMatricula.mvc.Database;
 using SistemaMatricula.mvc.Models;
 
 namespace SistemaMatricula.mvc.Repositories
@@ -21,11 +22,23 @@ namespace SistemaMatricula.mvc.Repositories
             
         }
 
+        //GET BY ID
+        public Aluno BuscarPorId(int id)
+        {
+           return _db.Matriculas.FirstOrDefault(x => x.MatriculaId == id)!;
+        }
+
+        //CREATE
         public void Cadastrar(Aluno aluno)
         {
-            
-            
-            
+            _db.Add(aluno);
+            _db.SaveChanges();
+        }
+
+         //Update
+        public void Atualizar(Aluno aluno)
+        {
+            _db.Remove(BuscarPorId(aluno.MatriculaId));
             _db.Add(aluno);
             _db.SaveChanges();
         }
