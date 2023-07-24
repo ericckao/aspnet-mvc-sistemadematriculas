@@ -2,14 +2,23 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/ericckao/PortfolioWeb/blob/main/LICENSE) 
 
 
-# Sobre o projeto
+# Sobre o Projeto
 O objetivo deste projeto é acadêmico, visando colocar em prática e me desafiar com base nas ferramentas e conhecimentos adquiridos. O foco principal é desenvolver um CRUD simulando um sistema de matrículas de uma faculdade..
 
 
 ## Layout Web - Tela Home
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 
+## Layout Web - Tela de Matrículas
+### Index
 
+### Nova matricula.
+
+### Editar
+
+### Excluir
+
+### Filtros
 
 # Como utilizar
 ## Instalações obrigatórias
@@ -24,6 +33,9 @@ Para acessar o back-end, será nescessario que você realize o clone do reposito
 https://github.com/ericckao/aspnet-mvc-sistemadematriculas
 
 Com uma das IDE's recomendadas acima, você poderá acessar o back-end do site, onde poderá ver a regra de negocio relacionadas ao funcionamento do site e sua integração com o banco de dados.
+
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/e68fc947-8415-4b86-b3f9-851eac5db3d6)
+
 
 ### Banco de dados
 Você pode acessar o banco de dados do site seguindo os passos abaixo.
