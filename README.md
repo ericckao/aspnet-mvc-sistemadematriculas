@@ -7,16 +7,19 @@ O objetivo deste projeto é acadêmico, visando colocar em prática e me desafia
 
 
 ## Layout Web - Tela Home
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/435de307-0d6e-4a5b-8b0f-d352e21d757a)
 
 ## Layout Web - Tela de Matrículas
 ### Index
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/66aba933-0ca6-47ca-ab69-a350e2b7d511)
 
 ### Nova matricula.
 
 ### Editar
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/417569c3-f166-4698-9912-70fc5258609d)
 
 ### Excluir
+
 
 ### Filtros
 
