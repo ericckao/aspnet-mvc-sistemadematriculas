@@ -33,6 +33,7 @@ namespace SistemaMatricula.mvc.Repositories
         {
             _db.Add(aluno);
             _db.SaveChanges();
+
         }
 
          //Update

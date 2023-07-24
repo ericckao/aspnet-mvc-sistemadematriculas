@@ -3,6 +3,11 @@
 //Jquery fazendo referencia ao nosso documento, quando estiver pronto, irá executar o codigo abaixo.
 $(document).ready(function () {
     $('#matriculas').DataTable({
+
+        "pageLength": 5,
+        "lengthMenu": [5, 10, 25, 50, 100],
+
+        //Configurando para PT-BR alguns topicos.
         language: {
             "decimal": "",
             "emptyTable": "No data available in table",
@@ -28,4 +33,15 @@ $(document).ready(function () {
             }
         }
     });
+
+
+    // CONFIGURANDO O TEMPO EM QUE A MENSAGEM DE SUCESSO IRÁ APARECER EM TELA.
+    setTimeout(function ()
+    {
+        $(".alert").fadeOut("slow", function ()
+        {
+            $(this).alert("close");
+        })
+    }, 5000)
+
 });

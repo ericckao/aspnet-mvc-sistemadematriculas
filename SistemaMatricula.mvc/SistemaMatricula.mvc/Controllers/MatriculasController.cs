@@ -34,6 +34,10 @@ namespace SistemaMatricula.mvc.Controllers
             if (ModelState.IsValid) //Verifica se a model recebida é valida
             {
                 _repository.Cadastrar(matricula);
+
+                //Mensagem de sucesso ao cadastrar
+                TempData["MensagemSucesso"] = "Matrícula realizada com sucesso!";
+
                 return RedirectToAction("Index"); //Após o cadastro, redirecionando para a index
             }
 
@@ -61,6 +65,9 @@ namespace SistemaMatricula.mvc.Controllers
             if (ModelState.IsValid) //Verifica se a model recebida é valida
             {
                 _repository.Atualizar(matricula);
+
+                TempData["MensagemSucesso"] = "Edição realizada com sucesso!";
+
                 return RedirectToAction("Index"); //Após o cadastro, redirecionando para a index
             }
 
@@ -92,6 +99,9 @@ namespace SistemaMatricula.mvc.Controllers
             }
 
             _repository.Deletar(registro);
+
+            TempData["MensagemSucesso"] = "Exclusão realizada com sucesso!";
+
             return RedirectToAction("Index"); //Após o cadastro, redirecionando para a index
         }
 

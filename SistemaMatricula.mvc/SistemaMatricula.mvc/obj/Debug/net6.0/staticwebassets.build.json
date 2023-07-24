@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LOecugpWwOYA4OF8A533wIO+9qUfAzyjO9Mud5jH8OA=",
+  "Hash": "1MGyMXFEyJPLuiUpMQ30pN4LL3D/iiWr1L7YNvFmcvA=",
   "Source": "SistemaMatricula.mvc",
   "BasePath": "_content/SistemaMatricula.mvc",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\erick\\OneDrive\\Documentos\\Estudos\\aspnet-mvc-sistemadematriculas\\SistemaMatricula.mvc\\SistemaMatricula.mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SistemaMatricula.mvc.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\erick\\OneDrive\\Documentos\\Estudos\\aspnet-mvc-sistemadematriculas\\SistemaMatricula.mvc\\SistemaMatricula.mvc\\wwwroot\\css\\materia.css",
+      "SourceId": "SistemaMatricula.mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erick\\OneDrive\\Documentos\\Estudos\\aspnet-mvc-sistemadematriculas\\SistemaMatricula.mvc\\SistemaMatricula.mvc\\wwwroot\\",
+      "BasePath": "_content/SistemaMatricula.mvc",
+      "RelativePath": "css/materia.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\materia.css"
     },
     {
       "Identity": "C:\\Users\\erick\\OneDrive\\Documentos\\Estudos\\aspnet-mvc-sistemadematriculas\\SistemaMatricula.mvc\\SistemaMatricula.mvc\\wwwroot\\css\\pulse.css",

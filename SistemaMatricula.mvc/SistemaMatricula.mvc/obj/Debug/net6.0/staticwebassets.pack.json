@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SistemaMatricula.mvc.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\erick\\OneDrive\\Documentos\\Estudos\\aspnet-mvc-sistemadematriculas\\SistemaMatricula.mvc\\SistemaMatricula.mvc\\wwwroot\\css\\materia.css",
+      "PackagePath": "staticwebassets\\css\\materia.css"
+    },
+    {
       "Id": "C:\\Users\\erick\\OneDrive\\Documentos\\Estudos\\aspnet-mvc-sistemadematriculas\\SistemaMatricula.mvc\\SistemaMatricula.mvc\\wwwroot\\css\\pulse.css",
       "PackagePath": "staticwebassets\\css\\pulse.css"
     },

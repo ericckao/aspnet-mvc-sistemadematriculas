@@ -14,6 +14,14 @@
         <a class="btn btn-success mx-2" asp-controller="Matriculas" asp-action="Cadastrar"><i class="bi bi-file-earmark-plus mx-2"></i>Nova Matrícula</a>
     </div>
 
+    <!-- Exibição da mensagem de Sucesso-->
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
     <!-- A view está recebendo da controller o banco de dados salvo na var "aluno-->
 
 <table id="matriculas" class="table table-light table-hover"> <!--  ID para o Jquery-->
