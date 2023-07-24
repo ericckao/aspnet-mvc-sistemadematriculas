@@ -1,7 +1,3 @@
-# Sistema de Matrículas
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ericckao/PortfolioWeb/blob/main/LICENSE) 
-
-
 # Sobre o Projeto
 O objetivo deste projeto é acadêmico, visando colocar em prática e me desafiar com base nas ferramentas e conhecimentos adquiridos. O foco principal é desenvolver um CRUD simulando um sistema de matrículas de uma faculdade..
 
@@ -14,12 +10,14 @@ O objetivo deste projeto é acadêmico, visando colocar em prática e me desafia
 ![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/66aba933-0ca6-47ca-ab69-a350e2b7d511)
 
 ### Nova matricula.
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/b8b770e1-a57a-4211-9d03-a91b4cd9f1ab)
 
 ### Editar
 ![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/417569c3-f166-4698-9912-70fc5258609d)
 
 ### Excluir
-
+- Os campos ficam bloqueados para alteração.
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/a2dd3eff-4d13-4285-9cfa-78d0d85a07dc)
 
 ### Filtros
 
