@@ -56,7 +56,7 @@ Você pode acessar o banco de dados do site seguindo os passos abaixo.
 
 # Tecnologias e métodologias utilizadas
 ## Front end
-- CSHTML 
+- Razor 
 - CSS
 - JS
 - Bootstrap
