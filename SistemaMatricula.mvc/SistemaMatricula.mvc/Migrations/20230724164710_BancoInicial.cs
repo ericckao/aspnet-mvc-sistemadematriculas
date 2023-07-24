@@ -18,7 +18,7 @@ namespace SistemaMatricula.mvc.Migrations
                     NOME_ALUNO = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false, defaultValue: "CAMPO-VAZIO"),
                     NOME_CURSO = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false, defaultValue: "CAMPO-VAZIO"),
                     UNIDADE = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValue: "CAMPO-VAZIO"),
-                    DATA_MATRICULA = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5469), new TimeSpan(0, -3, 0, 0, 0)))
+                    DATA_MATRICULA = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValue: new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(959))
                 },
                 constraints: table =>
                 {
@@ -30,12 +30,12 @@ namespace SistemaMatricula.mvc.Migrations
                 columns: new[] { "MatriculaId", "NOME_CURSO", "DATA_MATRICULA", "NOME_ALUNO", "UNIDADE" },
                 values: new object[,]
                 {
-                    { 1, "Análise e Desenvolvimento de Sistemas", new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5602), new TimeSpan(0, -3, 0, 0, 0)), "Erik Fernandes", "Vergueiro" },
-                    { 2, "Enfermagem", new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5607), new TimeSpan(0, -3, 0, 0, 0)), "Marcos Felipe", "São Judas" },
-                    { 3, "Odontólogia", new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5610), new TimeSpan(0, -3, 0, 0, 0)), "Mariana Dias", "Vila Mariana" },
-                    { 4, "Publicidade e Propaganda", new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5613), new TimeSpan(0, -3, 0, 0, 0)), "Leticia Silva", "Paulista" },
-                    { 5, "Culínaria", new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5615), new TimeSpan(0, -3, 0, 0, 0)), "Beatriz Reis", "Praça da Arvoré" },
-                    { 6, "Administração", new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5617), new TimeSpan(0, -3, 0, 0, 0)), "Vinicius Muller", "Saúde" }
+                    { 1, "Análise e Desenvolvimento de Sistemas", new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1041), "Erik Fernandes", "Vergueiro" },
+                    { 2, "Enfermagem", new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1043), "Marcos Felipe", "São Judas" },
+                    { 3, "Odontólogia", new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1044), "Mariana Dias", "Vila Mariana" },
+                    { 4, "Publicidade e Propaganda", new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1045), "Leticia Silva", "Paulista" },
+                    { 5, "Culínaria", new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1046), "Beatriz Reis", "Praça da Arvoré" },
+                    { 6, "Administração", new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1047), "Vinicius Muller", "Saúde" }
                 });
 
             migrationBuilder.CreateIndex(

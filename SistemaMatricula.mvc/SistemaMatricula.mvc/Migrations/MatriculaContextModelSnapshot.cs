@@ -38,10 +38,10 @@ namespace SistemaMatricula.mvc.Migrations
                         .HasDefaultValue("CAMPO-VAZIO")
                         .HasColumnName("NOME_CURSO");
 
-                    b.Property<DateTimeOffset>("DataMatricula")
+                    b.Property<DateTime>("DataMatricula")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetimeoffset")
-                        .HasDefaultValue(new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5469), new TimeSpan(0, -3, 0, 0, 0)))
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(959))
                         .HasColumnName("DATA_MATRICULA");
 
                     b.Property<string>("Nome")
@@ -75,7 +75,7 @@ namespace SistemaMatricula.mvc.Migrations
                         {
                             MatriculaId = 1,
                             Curso = "Análise e Desenvolvimento de Sistemas",
-                            DataMatricula = new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5602), new TimeSpan(0, -3, 0, 0, 0)),
+                            DataMatricula = new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1041),
                             Nome = "Erik Fernandes",
                             Unidade = "Vergueiro"
                         },
@@ -83,7 +83,7 @@ namespace SistemaMatricula.mvc.Migrations
                         {
                             MatriculaId = 2,
                             Curso = "Enfermagem",
-                            DataMatricula = new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5607), new TimeSpan(0, -3, 0, 0, 0)),
+                            DataMatricula = new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1043),
                             Nome = "Marcos Felipe",
                             Unidade = "São Judas"
                         },
@@ -91,7 +91,7 @@ namespace SistemaMatricula.mvc.Migrations
                         {
                             MatriculaId = 3,
                             Curso = "Odontólogia",
-                            DataMatricula = new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5610), new TimeSpan(0, -3, 0, 0, 0)),
+                            DataMatricula = new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1044),
                             Nome = "Mariana Dias",
                             Unidade = "Vila Mariana"
                         },
@@ -99,7 +99,7 @@ namespace SistemaMatricula.mvc.Migrations
                         {
                             MatriculaId = 4,
                             Curso = "Publicidade e Propaganda",
-                            DataMatricula = new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5613), new TimeSpan(0, -3, 0, 0, 0)),
+                            DataMatricula = new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1045),
                             Nome = "Leticia Silva",
                             Unidade = "Paulista"
                         },
@@ -107,7 +107,7 @@ namespace SistemaMatricula.mvc.Migrations
                         {
                             MatriculaId = 5,
                             Curso = "Culínaria",
-                            DataMatricula = new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5615), new TimeSpan(0, -3, 0, 0, 0)),
+                            DataMatricula = new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1046),
                             Nome = "Beatriz Reis",
                             Unidade = "Praça da Arvoré"
                         },
@@ -115,7 +115,7 @@ namespace SistemaMatricula.mvc.Migrations
                         {
                             MatriculaId = 6,
                             Curso = "Administração",
-                            DataMatricula = new DateTimeOffset(new DateTime(2023, 7, 21, 15, 42, 0, 693, DateTimeKind.Unspecified).AddTicks(5617), new TimeSpan(0, -3, 0, 0, 0)),
+                            DataMatricula = new DateTime(2023, 7, 24, 13, 47, 10, 345, DateTimeKind.Local).AddTicks(1047),
                             Nome = "Vinicius Muller",
                             Unidade = "Saúde"
                         });

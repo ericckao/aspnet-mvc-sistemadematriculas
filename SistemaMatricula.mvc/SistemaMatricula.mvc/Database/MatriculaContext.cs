@@ -29,7 +29,7 @@ namespace SistemaMatricula.mvc.Database
             matricula.Property(x => x.Nome).HasColumnName("NOME_ALUNO").HasMaxLength(50).HasDefaultValue("CAMPO-VAZIO").IsRequired();
             matricula.Property(x => x.Curso).HasColumnName("NOME_CURSO").HasMaxLength(100).HasDefaultValue("CAMPO-VAZIO").IsRequired();
             matricula.Property(x => x.Unidade).HasColumnName("UNIDADE").HasMaxLength(20).HasDefaultValue("CAMPO-VAZIO").IsRequired();
-            matricula.Property(x => x.DataMatricula).HasColumnName("DATA_MATRICULA").HasDefaultValue(DateTimeOffset.Now);
+            matricula.Property(x => x.DataMatricula).HasColumnName("DATA_MATRICULA").HasDefaultValue(DateTime.Now);
 
             #region SEEDS
             matricula.HasData
