@@ -29,6 +29,11 @@ Com uma das IDE's recomendadas acima, você poderá acessar o back-end do site, 
 Você pode acessar o banco de dados do site seguindo os passos abaixo.
 
 - Acessar o SGBD do SQL Server e conextar ao servidor.
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/f6090ee5-0f84-4c7c-8348-5280acd49af4)
+
+- Como o programa já tem o SEED inicial, vocês pode consulta-las.
+
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/4518e13b-b523-4907-b600-6f856182dcba)
 
 
 # Tecnologias e métodologias utilizadas
@@ -40,7 +45,7 @@ Você pode acessar o banco de dados do site seguindo os passos abaixo.
 
 ## Back-end
 - Padrão Repository
-- Entity FrameWork Core
+- Entity Framework Core
 - Fluent API
 
 ## Banco de Dados
