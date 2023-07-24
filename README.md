@@ -1,2 +1,0 @@
-# aspnet-mvc-sistemadematriculas
-CRUD
