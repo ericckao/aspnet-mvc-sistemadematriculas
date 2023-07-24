@@ -1,8 +1,10 @@
 # Sobre o Projeto
 O objetivo deste projeto é acadêmico, visando colocar em prática e me desafiar com base nas ferramentas e conhecimentos adquiridos. O foco principal é desenvolver um CRUD simulando um sistema de matrículas de uma faculdade..
 
+## Layout Mobile 
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 
-## Layout Web - Tela Home
+## Layout Web - Tela Home 
 ![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/435de307-0d6e-4a5b-8b0f-d352e21d757a)
 
 ## Layout Web - Tela de Matrículas
@@ -20,6 +22,9 @@ O objetivo deste projeto é acadêmico, visando colocar em prática e me desafia
 ![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/a2dd3eff-4d13-4285-9cfa-78d0d85a07dc)
 
 ### Filtros
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/10ba7e7a-fd43-41d2-ae25-1069f8d7ef8d)
+
+![image](https://github.com/ericckao/aspnet-mvc-sistemadematriculas/assets/88864793/2468f8f3-8d54-41d0-b495-b23ddd9d78ab)
 
 # Como utilizar
 ## Instalações obrigatórias
